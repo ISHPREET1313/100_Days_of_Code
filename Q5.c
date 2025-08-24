@@ -22,4 +22,5 @@ int main(){
     scanf("%f",&celsius); 
     farhenheit = ((9.0/5.0)*celsius) + 32;
     printf("Farhenheit = %.0f",farhenheit);
+    return 0;
 }
