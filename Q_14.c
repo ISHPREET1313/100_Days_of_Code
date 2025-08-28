@@ -14,17 +14,27 @@ Consonant
 
 */
 
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
+int main()
+{
     char input;
     printf("enter character:");
-    scanf("%c",&input);
-    if(input=='a'||input=='e'||input=='i'||input=='o'||input=='u'){
-        printf("Vowel");
+    scanf("%c", &input);
+    if (input >= 'A' && input <= 'Z' || input >= 'a' && input <= 'z')
+    {
+        if (input == 'a' || input == 'e' || input == 'i' || input == 'o' || input == 'u' ||
+            input == 'A' || input == 'E' || input == 'I' || input == 'O' || input == 'U')
+        {
+            printf("Vowel");
+        }
+        else
+        {
+            printf("Constant");
+        }
     }
     else{
-        printf("Constant");
+        printf("invalid input");
     }
     return 0;
 }
