@@ -25,6 +25,6 @@ int main(){
         add=(2.0*i-1)/(2.0*i);
         sum=sum+add;
     }
-    printf("%.1f",sum);
+    printf("Approximate sum:%.1f",sum);
     return 0;
 }
