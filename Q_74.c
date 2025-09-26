@@ -15,7 +15,7 @@ Output 1:
 #include<stdio.h>
 
 int main(){
-    int r,c,sum=0;
+    int r,c;
     printf("Enter no. of rows and columns:");
     scanf("%d %d",&r,&c);
     int arr[r][c];
