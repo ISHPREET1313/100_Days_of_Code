@@ -27,9 +27,9 @@ int main(){
         }
     }
     int arr1[c][r];
-    for(int i=0,k=0;i<r,k<c;i++,k++){
-        for(int j=0,l=0;j<c,l<r;j++,l++){
-            arr1[k][l]=arr[j][i];
+    for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            arr1[j][i]=arr[i][j];
         }
     }
     for(int i=0;i<c;i++){
