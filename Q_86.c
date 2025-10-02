@@ -25,6 +25,7 @@ int main(){
     for(int i=0;i<((count-1)/2);i++){
         if(str[i]!=str[count-i-2]){
             var=0;
+            break;
         }
     }
     if(var){
