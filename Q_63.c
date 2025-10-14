@@ -31,6 +31,7 @@ int main(){
     for(int i=0;i<count1;i++){
         scanf("%d",&arr1[i]);
     }
+    arr[count+count1];
     for(int i=0;i<count1;i++){
         arr[count+i]=arr1[i];
     }
