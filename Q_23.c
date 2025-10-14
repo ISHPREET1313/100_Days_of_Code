@@ -5,17 +5,17 @@ Sample Test Cases:
 Input 1:
 4
 Output 1:
-Fine \u20B91008
+Fine ₹8
 
 Input 2:
 8
 Output 2:
-Fine \u20B910032
+Fine ₹22
 
 Input 3:
 15
 Output 3:
-Fine \u20B910090
+Fine ₹60
 
 Input 4:
 31
