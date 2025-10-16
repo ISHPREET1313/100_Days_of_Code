@@ -29,26 +29,18 @@ int main(){
     for(int i=0;i<count;i++){
         scanf("%d",&nums[i]);
     }
-    int left_sum,right_sum,i,var=1;
-    for(i=0;i<count;i++){
-        left_sum=0;
-        right_sum=0;
-        for(int j=0;j<i;j++){
-            left_sum+=nums[j];
-        }
-        for(int k=i+1;k<count;k++){
-            right_sum+=nums[k];
-        }
-        if(left_sum==right_sum){
-            var=0;
+    int left_sum=0,right_sum=0,total_sum=0,result=-1;
+    for(int i=0;i<count;i++){
+        total_sum+=nums[i];
+    }
+    for(int i = 0; i < count; i++) {
+        int right_sum = total_sum - left_sum - nums[i];
+        if(left_sum == right_sum) {
+            result = i;
             break;
         }
+        left_sum += nums[i];
     }
-    if(var){
-        printf("-1");
-    }
-    else{
-        printf("%d",i);
-    }
+    printf("%d",result);
     return 0;
 }
