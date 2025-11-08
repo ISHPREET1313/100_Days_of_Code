@@ -21,12 +21,12 @@ struct Student{
 int main(){
     struct Student s[20];
     for(int i=0;i<2;i++){
+        printf("Enter roll no. of Student %d: ",i+1);
+        scanf("%d",&s[i].roll);
         printf("Enter name of Student %d: ",i+1);
         scanf("%s",s[i].name);
-        printf("Enter roll no. of Student %d: ",i+1);
-        scanf("%d ",s[i].roll);
         printf("Enter marks of Student %d: ",i+1);
-        scanf("%d",s[i].marks);
+        scanf("%d",&s[i].marks);
     }
     FILE *fp;
     fp=fopen("students.txt","w");
@@ -45,9 +45,17 @@ int main(){
             return 0;
         }
         else{
-            char str[200];
-            fgets(str,200,fp);
-            printf("%s",str);
+            char c;
+        while (1) {
+            char c=fgetc(fp);
+            if(c==EOF){
+                break;
+            }
+            printf("%c",c);
+            if(c==' '){
+                printf("| ");
+            }
+        }
         }
     }
     fclose(fp);
