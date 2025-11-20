@@ -22,9 +22,9 @@ void enter_details(struct Student S[],int n);
 
 int main(){
     struct Student s[5];
-    enter_details(s,2);
+    enter_details(s,5);
     printf("  Name  | Roll  | Marks \n");
-    for(int i=0;i<2;i++){
+    for(int i=0;i<5;i++){
         printf("%5s   | %3d   | %3d\n",s[i].Name,s[i].roll,s[i].marks);
     }
     return 0;
